@@ -7,13 +7,12 @@ JSON-LD構造化データ（BlogPosting / FAQPage / BreadcrumbList）対応。
 import sys
 import os
 import json
-import time
 import logging
 from datetime import datetime
 from pathlib import Path
 
 # blog_engineへのパスを追加
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 
 logging.basicConfig(
     level=logging.INFO,
@@ -51,27 +50,10 @@ def run(config, prompts=None):
                 '{"category": "カテゴリ名", "keyword": "キーワード"}'
             )
 
-        max_retries = 3
-        response_text = None
-        for attempt in range(1, max_retries + 1):
-            try:
-                response = client.models.generate_content(
-                    model=config.GEMINI_MODEL, contents=prompt
-                )
-                response_text = response.text.strip()
-                break
-            except Exception as api_err:
-                err_str = str(api_err)
-                if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str:
-                    if attempt < max_retries:
-                        wait = 30 * attempt
-                        logger.warning("レートリミット検出、%d秒待機（試行%d/%d）", wait, attempt, max_retries)
-                        time.sleep(wait)
-                        continue
-                raise
-
-        if response_text is None:
-            raise RuntimeError("キーワード選定のAPI呼び出しに失敗しました")
+        response = client.models.generate_content(
+            model=config.GEMINI_MODEL, contents=prompt
+        )
+        response_text = response.text.strip()
 
         if "```" in response_text:
             response_text = response_text.split("```")[1]
@@ -80,6 +62,7 @@ def run(config, prompts=None):
             response_text = response_text.strip()
 
         data = json.loads(response_text)
+        # Geminiがリストで返す場合があるので先頭要素を取得
         if isinstance(data, list):
             data = data[0]
         category = data["category"]
