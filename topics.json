@@ -1,0 +1,56 @@
+{
+  "Flux 使い方": [
+    {"keyword": "Flux 始め方 2026", "priority": "high", "status": "pending"},
+    {"keyword": "Flux.1 Pro 使い方 完全ガイド", "priority": "high", "status": "pending"},
+    {"keyword": "Flux Dev ローカル実行方法", "priority": "medium", "status": "pending"},
+    {"keyword": "Flux Schnell 高速生成の使い方", "priority": "medium", "status": "pending"},
+    {"keyword": "Flux ComfyUI セットアップ方法", "priority": "high", "status": "pending"}
+  ],
+  "Flux 料金・プラン": [
+    {"keyword": "Flux Pro 料金プラン 2026", "priority": "high", "status": "pending"},
+    {"keyword": "Flux API 料金比較 Replicate fal.ai", "priority": "high", "status": "pending"},
+    {"keyword": "Flux 無料で使う方法", "priority": "high", "status": "pending"},
+    {"keyword": "Flux クレジット消費量 目安", "priority": "medium", "status": "pending"}
+  ],
+  "Flux vs Midjourney": [
+    {"keyword": "Flux Midjourney 比較 2026年最新", "priority": "high", "status": "pending"},
+    {"keyword": "Flux vs DALL-E 3 どっちがいい", "priority": "high", "status": "pending"},
+    {"keyword": "Flux vs Stable Diffusion 3 比較", "priority": "medium", "status": "pending"},
+    {"keyword": "AI画像生成ツール おすすめ 2026", "priority": "medium", "status": "pending"}
+  ],
+  "Flux 最新ニュース": [
+    {"keyword": "Flux 2 新機能まとめ", "priority": "high", "status": "pending"},
+    {"keyword": "Black Forest Labs 最新アップデート", "priority": "high", "status": "pending"},
+    {"keyword": "Flux DSLRレベル写真生成の進化", "priority": "high", "status": "pending"},
+    {"keyword": "Flux オープンソース モデル最新動向", "priority": "medium", "status": "pending"},
+    {"keyword": "Flux Fill ControlNet 新機能", "priority": "medium", "status": "pending"}
+  ],
+  "Flux プロンプト術": [
+    {"keyword": "Flux プロンプト 書き方 完全ガイド", "priority": "high", "status": "pending"},
+    {"keyword": "Flux DSLR風リアル写真プロンプト集", "priority": "high", "status": "pending"},
+    {"keyword": "Flux ネガティブプロンプト テクニック", "priority": "medium", "status": "pending"},
+    {"keyword": "Flux アニメ風イラスト プロンプト", "priority": "medium", "status": "pending"},
+    {"keyword": "Flux 商品写真プロンプト テクニック", "priority": "medium", "status": "pending"}
+  ],
+  "AI画像生成テクニック": [
+    {"keyword": "Flux ControlNet 使い方", "priority": "high", "status": "pending"},
+    {"keyword": "Flux img2img 画像変換テクニック", "priority": "high", "status": "pending"},
+    {"keyword": "Flux インペイント 部分修正の方法", "priority": "medium", "status": "pending"},
+    {"keyword": "Flux LoRA 学習 カスタムモデル作成", "priority": "medium", "status": "pending"},
+    {"keyword": "Flux アップスケール 高解像度化", "priority": "medium", "status": "pending"}
+  ],
+  "Flux API": [
+    {"keyword": "Flux API 入門ガイド", "priority": "high", "status": "pending"},
+    {"keyword": "Replicate Flux API Python連携", "priority": "high", "status": "pending"},
+    {"keyword": "fal.ai Flux API 使い方", "priority": "medium", "status": "pending"},
+    {"keyword": "Flux API バッチ処理 大量生成", "priority": "medium", "status": "pending"},
+    {"keyword": "ComfyUI Flux ワークフロー構築", "priority": "medium", "status": "pending"}
+  ],
+  "Flux 活用事例": [
+    {"keyword": "Flux 商用利用ライセンス 完全解説", "priority": "high", "status": "pending"},
+    {"keyword": "Flux ECサイト商品画像 活用法", "priority": "high", "status": "pending"},
+    {"keyword": "Flux SNS素材 自動生成テクニック", "priority": "medium", "status": "pending"},
+    {"keyword": "Flux ストックフォト代替 活用事例", "priority": "medium", "status": "pending"},
+    {"keyword": "Flux ゲーム素材 コンセプトアート制作", "priority": "medium", "status": "pending"}
+  ]
+}
