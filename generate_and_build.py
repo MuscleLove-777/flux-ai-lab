@@ -61,7 +61,7 @@ def run(config, prompts=None):
                 response_text = response_text[4:]
             response_text = response_text.strip()
 
-        data = json.loads(response_text)
+        data = json.loads(response_text, strict=False)
         # Geminiがリストで返す場合があるので先頭要素を取得
         if isinstance(data, list):
             data = data[0]
