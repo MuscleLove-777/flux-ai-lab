@@ -121,7 +121,15 @@ def call_gemini_json(client, model, prompt, response_schema=None):
                 "Gemini API試行 %d/%d 失敗: %s", attempt, MAX_RETRIES, e
             )
             if attempt < MAX_RETRIES:
-                time.sleep(RETRY_DELAY * attempt)
+                # 429 Rate Limit: wait longer based on retry-after hint
+                error_str = str(e)
+                if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
+                    retry_match = re.search(r"retry(?:Delay|After)[^\d]*(\d+)", error_str, re.IGNORECASE)
+                    wait_time = int(retry_match.group(1)) + 5 if retry_match else 60
+                    logger.info("Rate limit hit, waiting %d seconds", wait_time)
+                    time.sleep(wait_time)
+                else:
+                    time.sleep(RETRY_DELAY * attempt)
 
     raise last_error
 
