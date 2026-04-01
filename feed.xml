@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flux AI画像生成ラボ</title>
+    <link>https://musclelove-777.github.io/flux-ai-lab</link>
+    <description>Black Forest Labs Fluxの使い方・最新モデル・Midjourney比較を毎日更新。DSLRレベルのリアリズムを実現するAI画像生成を完全解説。</description>
+    <language>ja</language>
+    <lastBuildDate>Wed, 01 Apr 2026 23:14:45 +0900</lastBuildDate>
+    <atom:link href="https://musclelove-777.github.io/flux-ai-lab/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Flux 使い方2026年版：DSLR級AI画像を秒速生成！</title>
+      <link>https://musclelove-777.github.io/flux-ai-lab/articles/flux-tsukaikata-photorealism-2026.html</link>
+      <guid>https://musclelove-777.github.io/flux-ai-lab/articles/flux-tsukaikata-photorealism-2026.html</guid>
+      <description></description>
+      <category>Flux 使い方</category>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Flux 使い方: DSLR級フォトリアリズム完全攻略2026</title>
+      <link>https://musclelove-777.github.io/flux-ai-lab/articles/flux-tsukaikata-photorealism-guide-2026.html</link>
+      <guid>https://musclelove-777.github.io/flux-ai-lab/articles/flux-tsukaikata-photorealism-guide-2026.html</guid>
+      <description></description>
+      <category>Flux 使い方</category>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>【2026年版】Flux 使い方 完全ガイド | AI画像生成の基本と応用</title>
+      <link>https://musclelove-777.github.io/flux-ai-lab/articles/flux-tsukaikata-guide-2026.html</link>
+      <guid>https://musclelove-777.github.io/flux-ai-lab/articles/flux-tsukaikata-guide-2026.html</guid>
+      <description></description>
+      <category>Flux 使い方</category>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
