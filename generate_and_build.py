@@ -91,7 +91,7 @@ def parse_json_safe(text):
 
 def call_gemini_json(client, model, prompt, response_schema=None):
     """Gemini APIを呼び出してJSONレスポンスを取得する（リトライ付き）"""
-    from google import genai
+    from llm import get_llm_client
     from google.genai import types
 
     last_error = None
@@ -142,13 +142,7 @@ def run(config, prompts=None):
     # ステップ1: キーワード選定
     logger.info("ステップ1: キーワード選定")
     try:
-        from google import genai
-
-        if not config.GEMINI_API_KEY:
-            logger.error("GEMINI_API_KEY が設定されていません")
-            sys.exit(1)
-
-        client = genai.Client(api_key=config.GEMINI_API_KEY)
+        client = get_llm_client(config)
 
         if prompts and hasattr(prompts, "build_keyword_prompt"):
             prompt = prompts.build_keyword_prompt(config)
