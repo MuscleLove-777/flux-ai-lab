@@ -136,7 +136,8 @@
     {
       "keyword": "Flux img2img 画像変換テクニック",
       "priority": "high",
-      "status": "pending"
+      "status": "done",
+      "done_at": "2026-05-23T11:53:37.603683"
     },
     {
       "keyword": "Flux インペイント 部分修正の方法",
